@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.sidebar, .properties {
+  width: 20%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+}
+
+.canvas {
+  flex: 1;
+  margin: 10px;
+  background-color: #fff;
+  border: 2px dashed #ccc;
+  padding: 10px;
+  min-height: 400px;
+  position: relative;
+}
+
+.draggable {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ddd;
+  border: 1px solid #999;
+  cursor: grab;
+}
+
+.properties input, .properties button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+}
